@@ -190,6 +190,177 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/13/rust-day02/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+
+        
+          <h1 class="post-title" itemprop="name headline">
+              
+              <a href="/2019/08/13/rust-day02/" class="post-title-link" itemprop="url">rust-day02</a>
+            
+          </h1>
+        
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              
+                
+              
+
+              <time title="Created: 2019-08-13 10:24:17 / Modified: 18:35:25" itemprop="dateCreated datePublished" datetime="2019-08-13T10:24:17+08:00">2019-08-13</time>
+            </span>
+          
+            
+
+            
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+            <h2 id="第二天记录"><a href="#第二天记录" class="headerlink" title="第二天记录"></a>第二天记录</h2><h3 id="通用编程概念"><a href="#通用编程概念" class="headerlink" title="通用编程概念"></a>通用编程概念</h3><ul>
+<li>const常量与不可变变量（默认） const MAX_POINTS: u32 = 100_000;</li>
+<li>Shadowing 隐藏. 相同变量名称被定义多次</li>
+<li>隐藏与mut的区别：let可以改变变量类型，mut不可以</li>
+<li>元组与数组   let tup: (i32, f64, u8) = (500, 6.4, 1); 解构；数组是定长的</li>
+<li>函数，采用snake case命名法</li>
+<li>结构体struct </li>
+<li>:?    :#?   ,类似与java的 toString的实现</li>
+<li>trait 特性，特征</li>
+<li>关联函数 impl 中实现的，不包含&amp;self参数的方法</li>
+<li>match 控制流，有点像java中的 switch case, if let 是match的语法糖</li>
+<li>迭代器与闭包：</li>
+<li>spawn 线程, 1:1 绿色线程;</li>
+<li>move 机制，let s1 = String::from(“hello”); let s2 = s1;</li>
+<li>Copy trait 与克隆 clone</li>
+<li>引用不获取所有权，内存不会被释放，变量仍然可以用</li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+      
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/13/rust-day01/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+
+        
+          <h1 class="post-title" itemprop="name headline">
+              
+              <a href="/2019/08/13/rust-day01/" class="post-title-link" itemprop="url">rust-day01</a>
+            
+          </h1>
+        
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              
+                
+              
+
+              <time title="Created: 2019-08-13 10:14:37" itemprop="dateCreated datePublished" datetime="2019-08-13T10:14:37+08:00">2019-08-13</time>
+            </span>
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+            
+          
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+      
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/09/图计算/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -541,7 +712,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
