@@ -55,18 +55,14 @@
   };
 </script>
 
-  <meta name="description" content="线上内存，CPU问题排查办法 执行jps，找到应用的java进程 top -Hp pid 查看占用内存，cpu较多的进程，找到pid jstack -l pid &amp;gt; jstack.log 将当前java进程的此刻java线程堆栈打印出来 jmap 导出堆栈快照，但是会影响应用的运行，造成卡顿，严重可能崩溃 jstat -gcutil pid 2000 20 每隔2s打印gc的统计数据，打印2">
-<meta property="og:type" content="article">
+  <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/2019/12/31/线上内存及CPU问题排查办法/index.html">
+<meta property="og:url" content="http://yoursite.com/archives/page/2/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="线上内存，CPU问题排查办法 执行jps，找到应用的java进程 top -Hp pid 查看占用内存，cpu较多的进程，找到pid jstack -l pid &amp;gt; jstack.log 将当前java进程的此刻java线程堆栈打印出来 jmap 导出堆栈快照，但是会影响应用的运行，造成卡顿，严重可能崩溃 jstat -gcutil pid 2000 20 每隔2s打印gc的统计数据，打印2">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-31T10:28:23.183Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="线上内存，CPU问题排查办法 执行jps，找到应用的java进程 top -Hp pid 查看占用内存，cpu较多的进程，找到pid jstack -l pid &amp;gt; jstack.log 将当前java进程的此刻java线程堆栈打印出来 jmap 导出堆栈快照，但是会影响应用的运行，造成卡顿，严重可能崩溃 jstat -gcutil pid 2000 20 每隔2s打印gc的统计数据，打印2">
-  <link rel="canonical" href="http://yoursite.com/2019/12/31/线上内存及CPU问题排查办法/">
+  <link rel="canonical" href="http://yoursite.com/archives/page/2/">
 
 
 <script id="page-configurations">
@@ -74,13 +70,13 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: true,
+    isPost: false,
     isPage: false,
-    isArchive: false
+    isArchive: true
   };
 </script>
 
-  <title> | Hexo</title>
+  <title>Archive | Hexo</title>
   
 
 
@@ -174,6 +170,18 @@
 
     
 
+    
+    
+      
+      
+    
+      
+      
+    
+    
+
+  
+
 </nav>
 </div>
     </header>
@@ -184,129 +192,77 @@
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
-          <div id="content" class="content page-post-detail">
+          <div id="content" class="content page-archive">
             
 
-  <div id="posts" class="posts-expand">
+  
+  
+  
+  <div class="post-block archive">
+    <div id="posts" class="posts-collapse">
+      <span class="archive-move-on"></span>
+      <span class="archive-page-counter">
+        
+        
+        
+          
+        
+        Um..! 11 posts in total. Keep on posting.
+      </span>
+      
+
+      
+
+  
+  
+  
+
+  
     
+    <div class="collection-title">
+      <h1 class="archive-year" id="archive-year-2019">2019</h1>
+    </div>
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/31/线上内存及CPU问题排查办法/">
+    <header class="post-header">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-
+      <h2 class="post-title">
         
-          <h1 class="post-title" itemprop="name headline">
-
+          <a class="post-title-link" href="/2019/08/08/athas初探/" itemprop="url">
             
-          </h1>
+              <span itemprop="name">athas初探</span>
+            
+          </a>
         
+      </h2>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2019-08-08T16:47:30+08:00"
+              content="2019-08-08">
+          08-08
+        </time>
+      </div>
 
-              
-                
-              
-
-              <time title="Created: 2019-12-31 18:28:23" itemprop="dateCreated datePublished" datetime="2019-12-31T18:28:23+08:00">2019-12-31</time>
-            </span>
-          
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-        <h2 id="线上内存，CPU问题排查办法"><a href="#线上内存，CPU问题排查办法" class="headerlink" title="线上内存，CPU问题排查办法"></a>线上内存，CPU问题排查办法</h2><ul>
-<li>执行jps，找到应用的java进程</li>
-<li>top -Hp pid 查看占用内存，cpu较多的进程，找到pid</li>
-<li>jstack -l pid &gt; jstack.log 将当前java进程的此刻java线程堆栈打印出来</li>
-<li>jmap 导出堆栈快照，但是会影响应用的运行，造成卡顿，严重可能崩溃</li>
-<li>jstat -gcutil pid 2000 20 每隔2s打印gc的统计数据，打印20次</li>
-<li>Eclipse MAT，分析.hprof 文件，查看可以的内存泄露，查看out reference </li>
-<li>查看JVM堆中对象详细占用情况,jmap -histo [pid]</li>
-<li>导出整个JVM 中内存信息,jmap -dump:format=b,file=文件名.hprof [pid]</li>
-</ul>
-<h2 id="排查堆外内存命令"><a href="#排查堆外内存命令" class="headerlink" title="排查堆外内存命令"></a>排查堆外内存命令</h2><ul>
-<li><p>pmap，查看内存占用情况  pmap -x [pid]  | sort -n -k3</p>
-</li>
-<li><p>NMT, java8有Native Memory Tracker可以使用，通过-XX:NativeMemoryTracking=detail就可以启用</p>
-</li>
-<li><p>perf神器</p>
-<ul>
-<li>perf record -g -p [pid] 开始记录内存分配行为，按control + C 会生成结果</li>
-<li>perf report -i [perf.data] 来分析结果</li>
-</ul>
-</li>
-<li><p>其它可以参考  <a href="https://www.jianshu.com/p/479a715d461e" target="_blank" rel="noopener">https://www.jianshu.com/p/479a715d461e</a> </p>
-</li>
-</ul>
-
-    </div>
-
-    
-    
-    
-        
-      
-
-      <footer class="post-footer">
-
-        
-
-          <div class="post-nav">
-            <div class="post-nav-next post-nav-item">
-              
-                <a href="/2019/12/20/记一次压测/" rel="next" title="记一次压测">
-                  <i class="fa fa-chevron-left"></i> 记一次压测
-                </a>
-              
-            </div>
-
-            <span class="post-nav-divider"></span>
-
-            <div class="post-nav-prev post-nav-item">
-              
-                <a href="/2020/01/01/Java应用内存过高/" rel="prev" title="Java应用内存过高">
-                  Java应用内存过高 <i class="fa fa-chevron-right"></i>
-                </a>
-              
-            </div>
-          </div>
-        
-      </footer>
-    
-  </div>
-  
-  
-  
+    </header>
   </article>
 
+
+
+
+    </div>
   </div>
+  
+  
+  
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/archives/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/archives/">1</a><span class="page-number current">2</span>
+  </nav>
+
 
 
           </div>
@@ -325,17 +281,8 @@
 
   <aside id="sidebar" class="sidebar">
     <div class="sidebar-inner">
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <div class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
 
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -371,23 +318,6 @@
 
         </div>
       </div>
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-            
-            
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#线上内存，CPU问题排查办法"><span class="nav-number">1.</span> <span class="nav-text">线上内存，CPU问题排查办法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#排查堆外内存命令"><span class="nav-number">2.</span> <span class="nav-text">排查堆外内存命令</span></a></li></ol></div>
-            
-
-          </div>
-        </div>
-      <!--/noindex-->
-      
 
     </div>
   </aside>
@@ -483,9 +413,5 @@
 
 
   
-  <script src="/js/scrollspy.js?v=7.3.0"></script>
-<script src="/js/post-details.js?v=7.3.0"></script>
-
-
 </body>
 </html>
